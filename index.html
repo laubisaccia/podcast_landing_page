@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Podcast</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-png" src="./images/logo.svg" alt="logo_podcast">
+        </div>
+        
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-list-item">
+                    <a class="header__navbar-list-link" href="#episodes" >EPISODIOS</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a class="header__navbar-list-link" href="#we">NOSOTROS</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a class="header__navbar-list-link" href="#interviews">ENTEVISTAS</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a class="header__navbar-list-link" href="#topics">TOPICOS</a>
+                </li>
+            </ul>
+        </nav> 
+
+    <section class="header__burguer-menu">
+        <input type="checkbox" id="burguer-menu">
+        <label for="burguer-menu" class="burguer-menu">
+            <div class="line line-top"></div>
+            <div class="line line-middle"></div>
+            <div class="line line-bottom"></div>
+        </label>
+        <div class="menu-slider">
+            <ul class="menu-slider__list">
+                <li class="menu-slider__list-item">
+                    <a class="menu-slider__list-link"  href="#episodes"> EPISODIOS</a>
+                </li>
+                <li class="menu-slider__list-item">
+                    <a class="menu-slider__list-link"  href="#we"> NOSOTROS</a>
+                </li>
+                <li class="menu-slider__list-item">
+                    <a class="menu-slider__list-link"  href="#interviews"> ENTREVISTAS</a>
+                </li>
+                <li class="menu-slider__list-item">
+                    <a class="menu-slider__list-link"  href="#topics"> TOPICOS</a>
+                </li>
+            </ul>
+        </div>
+    </section>  
+    </header>
+
+
+    <div class="title">
+        <h1 class="title__main">Hello <s>world</s> pale blue dot<span class="title__main title__main--blue">.</span></h1>
+        <p class="title__text">
+            El portal de podcasts que explora el mundo de la programacion y la tecnologia.Nuevos episodios, todos los jueves cada 15 dias.
+        </p>
+        <p class="title__text--short">
+            Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+        </p>
+        <button onclick="location.href='#we'" class="title__button">
+            CONOCÉ MÁS
+        </button>
+    </div>
+
+    <div class="cards-episodes">
+        <h2 class="cards-episodes__title" id="episodes">
+            Episodios
+        </h2>
+
+        <div class="cards-episodes__group-modules">
+            <iframe class="cards-episodes__module" src="https://open.spotify.com/embed/episode/1VGz2vBeJiult6b4YeO0eV" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="cards-episodes__module" src="https://open.spotify.com/embed/episode/1VGz2vBeJiult6b4YeO0eV" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="cards-episodes__module" src="https://open.spotify.com/embed/episode/1VGz2vBeJiult6b4YeO0eV" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="cards-episodes__module" src="https://open.spotify.com/embed/episode/1VGz2vBeJiult6b4YeO0eV" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+        </div>
+    </div>
+
+    <div class="container-we-are">
+        <img class="container-we-are__image" src="images/phone.png" alt="mobile mockup podcast">
+
+        <div class="container-we-are__paragraph">
+            <h2 class="container-we-are__title" id="we">De dónde venimos</h2>
+            <p class="container-we-are__text">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br><br>
+            Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+        </div>
+    </div>
+
+    <div class="container-interviews">
+       <h2 class="container-interviews__title" id="interviews">Invitadas/os estelares</h2>
+       <div class="container-interviews__images">
+           <img class="container-interviews__images--pictures" src="./images/grace-hopper.png" alt="photo grace-hopper">
+           <img class="container-interviews__images--pictures" src="./images/Katie-Bouman.png" alt="photo katie-bouman">
+           <img class="container-interviews__images--pictures" src="./images/Margaret_Hamilton.png" alt="photo Margaret_Hamilton">
+           <img class="container-interviews__images--pictures" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="photo computer-1950s">
+           <img class="container-interviews__images--pictures" src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="photo computer operators 1950s">
+           <img class="container-interviews__images--pictures" src="./images/susan-kare.png" alt="photo susan-kare">
+        </div>
+    </div>
+
+   <div class="container-topics">
+       <h2 class="container-topics__title" id="topics">Algunos de nuestros temas</h2>
+
+       <div class="container-topics__items">
+
+           <div class="container-topics__groups">
+                <img class="container-topics__groups-icon" src="./images/icon1.svg" alt="icon-remote-work">
+                <span class="container-topics__groups-details">Trabajo remoto</span>
+           </div>
+
+           <div class="container-topics__groups">
+                <img class="container-topics__groups-icon" src="./images/icon2.svg" alt="icon-programming">
+                <span class="container-topics__groups-details">Repensando la programación</span>
+           </div>
+
+           <div class="container-topics__groups">
+                <img class="container-topics__groups-icon" src="./images/icon3.svg" alt="icon-code">
+                <span class="container-topics__groups-details">Bases del código</span>
+           </div>
+           
+          <div class="container-topics__groups">
+                <img class="container-topics__groups-icon" src="./images/icon4.svg" alt="icon-security">
+                <span class="container-topics__groups-details">Seguridad informática</span>
+          </div> 
+
+        </div>
+    </div>
+
+    <div class="container-news">
+        <h2 class="container-news__title">¿Querés las últimas novedades?</h2>
+        <button onclick="location.href='#episodes'" class="container-news__button">
+            ESCUCHÁ LOS EPISODIOS
+        </button>
+    </div>
+    
+       <footer class="container-footer">
+           <span class="container-footer__copy">© 2019— Hello blue pale dot </span>
+
+           <div class="container-footer__social">
+                <a href="https://www.spotify.com/ar/home/" target="_blank">
+                    <i class="fab fa-spotify container-footer__social-icons"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram container-footer__social-icons"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter container-footer__social-icons"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook container-footer__social-icons"></i>
+                </a>
+                <a href="https://web.telegram.org/" target="_blank">
+                    <i class="fab fa-telegram container-footer__social-icons"></i>
+                </a>  
+           </div>
+           
+       </footer>
+
+</body>
+</html>
