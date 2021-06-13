@@ -8,13 +8,12 @@
 :root{
     font-size: 16px;
 } 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     :root{
         font-size: 14px;
+        background: white;
     }  
 }
-
-
 /* ***************** HEADER ***************** */
 .header{
     display: flex;
@@ -25,47 +24,34 @@
     padding: 5.4375rem 6.25rem;
 }
 .header__logo{
-    width: 50%;
+    width: 30%;
 }
 .header__logo-png{
-    height: 36px;
-    padding-left: 1rem;
+    height: 2.25rem;
 }
 .header__navbar{
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
 .header__burguer-menu{
-    visibility: hidden;
-}
-
-@media screen and (max-width:425px) {
-    .header__navbar{
-        display: none;
-    }  
-    .header{
-        padding: 10px 16px ;
-    }
-    .header__burguer-menu{
-        visibility: visible;
-    }
+    display: none;
 }
 .header__navbar-list{
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 300;
     font-size: 1rem; 
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 .header__navbar-list-link{
     text-decoration: none;
     color: black;
+    margin: 1rem;
 }
 
 .header__navbar-list-link:hover{
@@ -77,25 +63,11 @@
     padding-left: 12.5rem;
     height: auto;
 }
-@media screen and (max-width:425px) {
-    .title{
-        padding-left: 0;
-        padding: 0 16px 24px 16px;
-    }  
-}
 .title__main{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     font-size: 4rem;
     color: #060A24;
-}
-@media screen and (max-width:425px) {
-    .title__main{
-        width: 70%;
-        font-size: 36px;
-        line-height: 42px;
-        margin-top: 29px;
-    }  
 }
 .title__main--blue{
     color: #0000EC;
@@ -107,25 +79,8 @@
     font-size: 1rem; 
     color: #060A24;
 }
-@media screen and (max-width:425px) {
-    .title__text{
-        display: none;
-    }  
-}
 .title__text--short{
     display: none;
-}
-@media screen and (max-width:425px) {
-    .title__text--short{
-        width: 90%;
-        font-family: 'IBM Plex Mono', monospace;
-        font-weight: 300;
-        font-size: 1rem; 
-        color: #060A24;
-        display: block;
-        padding: 16px 0 36px 0;
-        
-    }  
 }
 .title__button{
     background-color: #00F3BB;
@@ -141,14 +96,6 @@
     color: #ffffff;
     background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
 }
-@media screen and (max-width:425px) {
-    .title__button{
-        width: 90%;
-        font-size: 1rem;
-        margin-top: 0;
-    }  
-}
-
 /* ***************** BURGUER MENU ***************** */
 .line{
     width: 42px;
@@ -168,27 +115,9 @@ input#burguer-menu{
 #burguer-menu:checked + label .line-middle{
     background-color: white ;
 }
-
 #burguer-menu:checked + label .line-bottom{
     transform: rotate(-45deg);
 }
-
-@media screen and (max-width:425px) {
-    .menu-slider{
-        width: 100%;
-        background-color: #0000EC;
-        position: fixed;
-        left: 0;
-        right: 0;
-        transform: translateX(100vw);
-        transition: all 1s ease;
-        visibility: visible;
-        list-style-type: none;
-        padding-top: 16px;
-        padding-left: 30px;
-    }  
-}
-
 .menu-slider__list-item{
     list-style-type: none;
     display: block;
@@ -197,21 +126,14 @@ input#burguer-menu{
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
-
 }
 .menu-slider__list-link{
     text-decoration: none;
     color: white;
 }
-/* .menu-slider{
-
-    visibility: hidden;
-}   */
-
 #burguer-menu:checked ~ .menu-slider{
     transform: translateX(0vw);
 } 
-
 /* ***************** EPISODES/CARDS ***************** */
 .cards-episodes{
     width: 100vw;
@@ -220,32 +142,16 @@ input#burguer-menu{
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
     position: relative;
 }
-@media screen and (max-width:425px) {
-    .cards-episodes{
-        height: 1000px; 
-        clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
-    }  
-}
-/* .title{
+.title-section{
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 400;
-} */
+} 
 .cards-episodes__title{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
     position: absolute;
     top: 12.5rem;
     left: 200px;
     color: white;
-}
-@media screen and (max-width:425px) {
-    .cards-episodes__title{
-        font-size: 2.25rem;
-        top: 60px;
-        left: 16px;
-    }  
 }
 .cards-episodes__group-modules{
     width: 100vw;
@@ -256,24 +162,11 @@ input#burguer-menu{
     top: 17.75rem;
     align-content: center;
 }
-@media screen and (max-width:425px) {
-    .cards-episodes__group-modules{
-        top: 7.5rem;    
-    }  
-}
 .cards-episodes__module{
     width: 40%;
     cursor: pointer;
     margin: 36px 36px 0 36px;  
 }
-@media screen and (max-width:425px) {
-    .cards-episodes__module{
-        width: 100%;
-        height: 160px;
-        margin: 5.5px;
-    }  
-}
-
 /* ***************** WE ARE ***************** */
 .container-we-are{
     width: 100%;
@@ -283,52 +176,19 @@ input#burguer-menu{
     justify-content: center;
     z-index: 100;
     position: relative; 
-    bottom: 6.25rem; 
-   
-}
-@media screen and (max-width:425px) {
-    .container-we-are{
-        flex-direction: column;
-        margin-top: 9rem;
-    }  
+    bottom: 6.25rem;   
 }
 .container-we-are__image{
     height: auto;
-    width: auto;
-    max-width: 28.625rem; 
+    width: 30vw;
+    min-width: 23.125rem; 
     padding-top: 4rem;  
 }
-@media screen and (max-width:425px) {
-    .container-we-are__image{
-        width: 100%;
-        padding-top: 0;
-    }  
-}
 .container-we-are__paragraph{
-   
-}
-@media screen and (max-width:425px) {
-    .container-we-are__paragraph{
-        width: 100%;
-        padding: 16px;
-    }  
-}
-.container-we-are__title{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    /* width: 24.9375rem; */
-}
-@media screen and (max-width:425px) {
-    .container-we-are__title{
-        font-size: 36px;
-        padding-right: 20%;
-        font-weight: 400;
-        
-    }  
+    width: 500px;
 }
 .container-we-are__text{
-    width: 29rem;
+    width: 500px;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 400;
     font-size: 1rem; 
@@ -336,31 +196,15 @@ input#burguer-menu{
     margin-top: 1.5rem;
     line-height: 1.5rem;
 }
-@media screen and (max-width:425px) {
-    .container-we-are__text{
-        width: 100%;
-        
-    }  
-}
 /* ***************** INTERVIWS ***************** */
 .container-interviews{
     width: 100%;
 }
 .container-interviews__title{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
     color: #060A24 ;
-    margin: 4rem 0 2.25rem 12.5rem;
+    margin: 64px 0px 36px 200px;
+    padding: 54px 0 14px 16px;
 }
- @media screen and (max-width:425px) {
-    .container-interviews__title{
-        margin: 0 0 2.25rem 1rem;
-        font-size: 36px;
-        padding-top: 9.375rem;
-        padding-right: 20%;
-    }  
-} 
 .container-interviews__images{
     width: 100vw;
     height: auto;
@@ -371,48 +215,19 @@ input#burguer-menu{
     width: 33%;
     align-content: center;
 }
-@media screen and (max-width:425px) {
-    .container-interviews__images{
-        flex-direction: column;
-    }  
-}
-@media screen and (max-width:425px) {
-    .container-interviews__images--pictures{
-        width: 100vw;
-    }  
-}
 /* ***************** TOPICS ***************** */
 .container-topics{
     height: auto; 
 }
 .container-topics__title{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
     margin: 64px 0px 69px 200px;
 }
-@media screen and (max-width:425px) {
-    .container-topics__title{
-        margin: 3rem 0 2.25rem 1rem;
-        font-size: 36px;
-        padding-right: 30%;
-        font-weight: 400;
-        line-height: 42px;
-    }  
-}
 .container-topics__items{
-    /* padding-top: 0 200px; */
     display: flex;
     align-content: space-between;
     justify-content: center;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.5rem;
-}
-@media screen and (max-width:425px) {
-    .container-topics__items{
-        flex-direction: column;
-        height: auto;
-    }  
 }
 .container-topics__groups{
     display: flex;
@@ -422,14 +237,8 @@ input#burguer-menu{
     font-weight: bold;
     font-size: 1.5rem;
     color: #060A24;  
-    /* height: 12.3125rem;  */
     height: auto;
     padding: 0 1rem;    
-}
-@media screen and (max-width:425px) {
-    .container-topics__groups{
-        padding-bottom: 42px;
-    }  
 }
 .container-topics__groups-icon{
     width: 104px;
@@ -445,18 +254,11 @@ input#burguer-menu{
 /* ***************** NEWS ***************** */
 .container-news{
     height: 32.375rem;
-    /* height: auto; */
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0 27%, 100% 0%, 100% 100%, 0 100%);
     display: flex;
     flex-direction: column;
     align-items: center; 
-}
-@media screen and (max-width:425px) {
-    .container-news{
-        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
-        height: auto;
-    }  
 }
 .container-news__title{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -465,13 +267,6 @@ input#burguer-menu{
     color: #FFFFFF;
     text-align: center;
     padding-top: 13.3125rem;
-}
-@media screen and (max-width:425px) {
-    .container-news__title{
-        padding-top: 4rem;
-        font-size: 36px;
-        width: 60%;
-    }  
 }
 .container-news__button{
     background-color: #00F3BB;
@@ -487,10 +282,8 @@ input#burguer-menu{
     color: #ffffff;
     background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
 }
-
 /* ***************** FOOTER ***************** */
 .container-footer{
-  /*   width: 1440px; */
     height: 5.9375rem;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
@@ -499,24 +292,10 @@ input#burguer-menu{
     padding: 0 6.25rem;
     align-items: center;
 }
-@media screen and (max-width:425px) {
-    .container-footer{
-       flex-direction: column;
-       width: 100vw;
-       padding: 0px;
-       height: 121px;
-       justify-content: space-evenly;
-    }  
-}
 .container-footer__social{
     width: 14.625rem;
     display: flex;
     justify-content: space-between;
-}
-@media screen and (max-width:425px) {
-    .container-footer__social{
-        width: 226px;
-    }  
 }
 .container-footer__social-icons{
     color: black;
@@ -524,4 +303,148 @@ input#burguer-menu{
 }
 .container-footer__social-icons:hover{
     color: #00F3BB ;
+}
+
+/* ****************** MEDIAS ******************** */
+@media screen and (max-width:768px) {
+    .header__navbar{
+        display: none;
+    }  
+    .header{
+        padding: 10px 16px ;
+    }
+    .header__burguer-menu{
+        visibility: visible;
+        display: block;
+    }
+    .title{
+        padding-left: 0;
+        padding: 0 16px 24px 16px;
+    }  
+    .title__main{
+        width: 80%;
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 29px;
+    }  
+    .title__text{
+        display: none;
+    }
+    .title__text--short{
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+        font-size: 1rem; 
+        color: #060A24;
+        display: block;
+        padding: 16px 0 36px 0; 
+    }  
+    .title__button{
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 0;
+    } 
+    .menu-slider{
+        width: 100%;
+        background-color: #0000EC;
+        position: fixed;
+        left: 0;
+        right: 0;
+        transform: translateX(100vw);
+        transition: all 1s ease;
+        visibility: visible;
+        list-style-type: none;
+        padding-top: 16px;
+        padding-left: 30px;
+    }  
+    .cards-episodes{
+        height: 980px; 
+        clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%); 
+    }  
+    .title-section{
+        font-size: 36px;
+    } 
+    .cards-episodes__title{
+        top: 60px;
+        left: 16px;
+    }  
+    .cards-episodes__group-modules{
+        top: 7.5rem;    
+    }  
+    .cards-episodes__module{
+        width: 100%;
+        height: 160px;
+        margin: 5.5px;
+    }  
+    .container-we-are{
+        flex-direction: column;
+        margin-top: 9rem;
+        background: white;
+    }  
+    .container-we-are__image{
+        width: 100%;
+        padding-top: 1.25rem;
+        min-width: 0;
+    }
+    .container-we-are__paragraph{
+        width: 100%; 
+        background: white;
+        padding: 16px;
+    }
+    .container-we-are__title{
+        padding-right: 20%;  
+    }
+    .container-we-are__text{
+        width: 100%;  
+    } 
+    .container-interviews{
+        background: white ;
+    }
+    .container-interviews__title{
+        margin: 0 0 2.25rem 1rem;
+        padding:0;
+        padding-top: 40%;
+        padding-right: 20%;
+    }  
+    .container-interviews__images{
+        flex-direction: column;
+    }  
+    .container-interviews__images--pictures{
+        width: 100vw;
+        z-index: 1;
+    }  
+    .container-topics{
+        background:white;
+    }  
+    .container-topics__title{
+        margin: 3rem 0 2.25rem 1rem;
+        line-height: 42px;
+    }  
+    .container-topics__items{
+        flex-direction: column;
+        height: auto;
+        background:white;
+    }
+    .container-topics__groups{
+        padding-bottom: 42px;
+        background:white;
+    } 
+    .container-news{
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+        height: auto;
+    }  
+    .container-news__title{
+        padding-top: 4rem;
+        font-size: 36px;
+        width: 60%;
+    }  
+    .container-footer{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0px;
+        height: 121px;
+        justify-content: space-evenly;
+    }  
+    .container-footer__social{
+        width: 226px;
+    }  
 }
